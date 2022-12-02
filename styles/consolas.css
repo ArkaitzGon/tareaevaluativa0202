@@ -1,0 +1,143 @@
+/**
+    Módulo: Lenguaje de marcas y sistemas de gestion de información
+    Tarea: Tarea Evaluativa 02
+    UD: 02
+    Autor: Arkaitz Gonzalez Barquin
+    Fecha: 02/12/2022
+    Autoevaluacion: https://docs.google.com/document/d/1o6D6aC2sTtlRwSG02k7n3IVaj94iKp_9nkGYUmXfbXc/edit?usp=sharing
+*/
+
+@import "styles/normalize.css";
+
+/*ESTILOS GENERALES*/
+html{
+    font-size: 62.5%; 
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../imagenes/patron.png');
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*ESTILOS HEADER*/
+.cabecera{
+    display: flex;
+    width: 40%;
+    height: 20rem;
+    margin: 0 auto;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.cabecera img{
+    width: 20%;
+}
+
+.cabecera h1{
+    font-family: Comic Sans MS;
+    width: 80%;
+    font-size:10rem; 
+    text-align: center; 
+    color: rgba(20, 165, 248, 0.9);
+    padding: 0;
+    margin: 0;
+}
+
+.cabecera :hover{
+    margin-bottom: 1rem;
+}
+
+/*ESTILOS NAV*/
+.navegador{
+    width: 100%;
+    height: 9rem;
+}
+
+.navegador ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.elemento_nav{
+    background-color: rgb(243, 250, 225);
+    color: rgba(32, 39, 125, 0.95);
+    list-style: none;
+    font-size: 4rem;
+    padding: 1rem;
+    border: 0.5rem solid rgb(245, 192, 77);
+    border-radius: 2rem;
+    width: 10%;
+    text-align: center;
+}
+
+.boton :hover{
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*ESTILOS CONTENIDO*/
+.contenido{
+    min-height: 60rem;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+}
+
+.contenido ul{
+    width: 80%;
+    display: flex;
+    list-style: none;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 5rem;
+    padding: 0;
+}
+
+.botones{
+    width: 20%;
+    height: 20rem;
+    margin: 2rem;
+    border-radius: 3rem;
+    background-color: rgba(183, 213, 232, 0.9);
+    box-shadow: 1rem 1rem black;
+}
+
+.botones :hover{
+    background-color: rgba(112, 181, 224, 0.9);
+    border-radius: 3rem;
+    font-weight: bold;
+}
+
+.botones li{
+    text-align: center;
+    line-height: 20rem;
+    font-size: 4rem;
+    
+}
+
+.botones li :hover{
+    font-weight: bold;
+}
+/*ESTILOS FOOTER*/
+.footer{
+    background-color: rgba(11, 22, 176,.8);
+    color: rgb(243, 250, 225);
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,221 @@
+/**
+    Módulo: Lenguaje de marcas y sistemas de gestion de información
+    Tarea: Tarea Evaluativa 02
+    UD: 02
+    Autor: Arkaitz Gonzalez Barquin
+    Fecha: 02/12/2022
+    Autoevaluacion: https://docs.google.com/document/d/1o6D6aC2sTtlRwSG02k7n3IVaj94iKp_9nkGYUmXfbXc/edit?usp=sharing
+*/
+@import "styles/normalize.css";
+
+/*ESTILOS GENERALES*/
+html{
+    font-size: 62.5%; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../imagenes/patron.png');
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*ESTILOS HEADER*/
+.cabecera{
+    display: flex;
+    width: 40%;
+    height: 20rem;
+    margin: 0 auto;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.cabecera img{
+    width: 20%;
+}
+
+.cabecera h1{
+    font-family: Comic Sans MS;
+    width: 80%;
+    font-size:10rem; 
+    text-align: center; 
+    color: rgba(20, 165, 248, 0.9);
+    padding: 0;
+    margin: 0;
+}
+
+.cabecera :hover{
+    margin-bottom: 1rem;
+}
+
+/*ESTILOS NAV*/
+.navegador{
+    width: 100%;
+    height: 9rem;
+}
+
+.navegador ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.elemento_nav{
+    background-color: rgb(243, 250, 225);
+    color: rgba(32, 39, 125, 0.95);
+    list-style: none;
+    font-size: 4rem;
+    padding: 1rem;
+    border: 0.5rem solid rgb(245, 192, 77);
+    border-radius: 2rem;
+    width: 10%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.boton :hover{
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+ /*ESTILOS CONTENIDO*/
+ .contenido{
+    width: 100%;
+    min-height: 60rem ;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+.juegos{
+    width: 80%;
+    min-height: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tablero{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ficha{
+    border: .5rem solid rgba(32, 39, 125);
+    display: flex;
+    width: 70%;
+    min-height: 15rem;
+    margin: 2rem;
+    justify-content: space-evenly;
+    background-color: rgba(183, 213, 232, 0.9);
+    border-radius: 3rem;
+    box-shadow: 1rem 1rem black;
+}
+
+.ficha img{
+    width: 20rem;
+    margin: 2rem;
+}
+
+.ficha ul{
+    margin: 0 ;
+    padding: 0 3rem 0 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-left: .3rem solid rgba(32, 39, 125);
+    border-right: .3rem solid rgba(32, 39, 125);
+    justify-content: center;
+}
+
+.ficha ul li{
+    list-style: none;
+    font-size: 3rem;
+
+}
+.ficha h4{
+    font-size: 5rem;
+    text-align: center;
+}
+.categorias{
+    width: 20%;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.categorias h3{
+    font-size: 4rem;
+    color: rgba(32, 39, 125, 0.95);
+    text-align: center;
+    margin: 3rem 1rem 3rem 1rem ;
+    padding: 1rem;
+    background-color: rgba(183, 213, 232, 0.9);
+    border: solid .5rem rgba(11, 22, 176, 0.9);
+    border-radius: 5rem;
+}
+
+.categorias ul{
+    display: flex;
+    flex-flow: column wrap;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    background-color: rgba(183, 213, 232, 0.9);
+    border-radius: 2rem;
+    box-shadow: 1rem  1rem black;
+    padding: 0;
+}
+
+.elemento_cat{
+    background-color: rgb(243, 250, 225);
+    color: rgba(32, 39, 125, 0.95);
+    font-size: 3rem;
+    text-align: center;
+    border: 0.5rem solid rgb(245, 192, 77);
+    border-radius: 3rem;
+    width: 75%;
+}
+
+.clear{
+    clear: both;
+}
+
+/*ESTILOS FOOTER*/
+.footer{
+    background-color: rgba(11, 22, 176,.8);
+    color: rgb(243, 250, 225);
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.verde{
+    color: green;
+}
+
+.naranja{
+    color: orange;
+}
+
+.negrita{
+    font-weight: bold;
+}

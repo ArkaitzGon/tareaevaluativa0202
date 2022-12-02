@@ -1,0 +1,82 @@
+<!--
+    Módulo: Lenguaje de marcas y sistemas de gestion de información
+    Tarea: Tarea Evaluativa 02
+    UD: 02
+    Autor: Arkaitz Gonzalez Barquin
+    Fecha: 02/12/2022
+    Autoevaluacion: https://docs.google.com/document/d/1o6D6aC2sTtlRwSG02k7n3IVaj94iKp_9nkGYUmXfbXc/edit?usp=sharing
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles/contacto.css">
+  </head>
+  <body>
+    <header>
+      <a class="cabecera" href="index.html">
+        <img src="imagenes/logo.png" alt="Logo Web">
+        <h1>RetroGamer</h1> 
+      </a>
+    </header>
+    <nav class="navegador">
+      <ul>
+        <a class="elemento_nav boton" href="index.html"><li>Inicio</li></a>
+        <a class="elemento_nav boton" href="consolas.html"><li>Consolas</li></a>
+        <a class="elemento_nav boton" href="noticias.html"><li>Noticias</li></a>
+        <a class="elemento_nav boton" href="contacto.html"><li>Contacto</li></a>
+      </ul>
+    </nav>
+    <section class="contenido">
+      <div class="contacto">
+        <!--Formulario-->
+        <div class="formulario">
+          <form>
+            <fieldset>
+              <legend>Contacto</legend>
+              <label>Nombre:</label><br>
+              <input type="text" id="nombre" name="nombre"><br>
+              <label>Apellido:</label><br>
+              <input type="text" id="apellido" name="apellido"><br>
+              <label>Email:</label><br>
+              <input type="text" id="email" name="email"><br>
+              <label>Elige tu consola preferida.*</label><br>
+              <select>
+                <option value="vacio"></option>
+                <option value="super_nintendo">Super Nintendo</option>
+                <option value="playstation">Playstation</option>
+                <option value="xbox">Xbox</option>
+                <option value="nintendo_64">Nintendo 64</option>
+                <option value="game_boy">Game Boy</option>
+                <option value="otra">Otra...</option>
+              </select><br>
+              <label>Mensaje:</label><br>
+              <textarea name="mensaje" cols="66" rows="25">Escriba aqui su mensaje...</textarea>
+              <input class="input" type="submit" value="Enviar">
+            </fieldset>
+          </form>
+          <span>*Campo opcional</span>
+        </div>
+      </div>
+      <div class="redes">
+        <h3>Redes Sociales</h3>
+        <ul>
+          <a class="elemento_red boton" href="#"><li>Twitter</li></a>
+          <a class="elemento_red boton" href="#"><li>Facebook</li></a>
+          <a class="elemento_red boton" href="#"><li>Instagram</li></a>
+          <a class="elemento_red boton" href="#"><li>Youtube</li></a>
+        </ul>
+      </div>
+      <!--Boton para mandar email.-->
+      <form action="mailto:argonzalez@birt.eus" method="get">
+        <input class="email" type="submit" value="Mandar un email">
+      </form> 
+    </section>
+    <footer class="footer">
+      <h3>Pagina creada por Arkaitz Gonzalez Barquin</h3>
+      <h3>Derecho audiovisuales Creative Commons, Eurogamer.com y Pixabay.com.</h3>
+    </footer>
+  </body>
+</html>
